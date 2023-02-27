@@ -20,9 +20,7 @@ function getApiGitHub() {
                      <span class="date-create">${Intl.DateTimeFormat('pt-BR').format(new Date(item.created_at))}</span>
                     </div>
                     <div class="link-img">
-                       <a href="${item.html_url} "target="_blank"><img src="img/github.png" alt=""></a>
-                       <a href="https://${item.name} "target="_blank">teste</a>
-                       
+                       <a href="${item.html_url} "target="_blank"><img src="img/github.png" alt=""></a>   
                     </div>
                     <div>
                        <span class="language"><span class="circle"></span>${item.language}</span>
