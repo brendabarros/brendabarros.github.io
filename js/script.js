@@ -15,17 +15,18 @@ function getApiGitHub() {
                 let project = document.createElement('div');
                 project.innerHTML = `
                 <div class="project">
-                    <div>
+                    <div class="nome-projeto">
                       <h4 class="title">${item.name}</h4>
                      <span class="date-create">${Intl.DateTimeFormat('pt-BR').format(new Date(item.created_at))}</span>
+                     <p>${item.description}</p>
                     </div>
                     <div class="link-img">
-                       <a href="${item.html_url} "target="_blank"><img src="img/github.png" alt=""></a>   
-                    </div>
-                    <div>
+                       <a href="${item.html_url} "target="_blank"><img src="img/github.png" alt=""></a>  
                        <span class="language"><span class="circle"></span>${item.language}</span>
+                       
                     </div>
-                </div> `
+                    
+                    `
 
                 respositories.appendChild(project);
 

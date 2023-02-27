@@ -142,6 +142,7 @@ header {
     text-shadow: #000000 0.1em 0.1em 0.2em;
 
 }
+
 /*---------------------------------HABILIDADES------------------------------------*/
 .habilidade {
     display: flex;
@@ -185,6 +186,7 @@ header {
     filter: opacity(0.4) drop-shadow(0 0 0 rgb(13, 1, 70));
     /* propriedade para mudar a cor de um png*/
 }
+
 /*---------------------------------PROJETOS------------------------------------*/
 .content-main {
     display: flex;
@@ -206,8 +208,9 @@ header {
 
 
 .project {
+    
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     border: 3px solid rgb(0, 0, 0);
     padding: 10px 5px;
     border-radius: 20px 0;
@@ -215,6 +218,14 @@ header {
     box-shadow: #000000 0.1em 0.1em 0.5em;
     font-size: 20px;
     align-items: center;
+
+}
+
+.project div {
+
+    align-items: center;
+    
+    
 
 }
 
@@ -226,7 +237,15 @@ header {
 
 .project .link-img {
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    
+
 }
+
 
 
 
@@ -270,4 +289,17 @@ header {
         margin-right: 0;
     }
 
+    .project {
+        text-align: center;
+        margin-right: 0;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .link-img{
+        padding: 0;
+       display: flex;
+       gap: 10px;
+    }
 }
