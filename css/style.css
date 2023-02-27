@@ -1,0 +1,269 @@
+/* FONTES DO GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap');
+
+/*---------------------------------CONFIGURAÇÕES PRINCIPAIS DO BODY------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
+}
+
+body {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(112, 33, 154, 1) 100%);
+   
+}
+
+.container {
+    
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    padding: 24px;
+    
+
+}
+
+/*---------------------------------CABEÇALHO------------------------------------*/
+header {
+    border-bottom: 1px solid white;
+
+
+
+}
+
+.container-cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container-cabecalho .logo h2 {
+    color: white;
+    font-size: 30px;
+
+
+}
+
+.container-link .link {
+    display: flex;
+    gap: 35px;
+}
+
+.container-link .link a {
+    color: white;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.link-mobile i {
+    display: none;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+
+
+/*---------------------------------IMAGEM------------------------------------*/
+
+.container.sobre{
+    align-items: center;
+}
+.foto-sobre img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.foto-sobre{
+    transition: all .5s;
+    padding: 10px 10px;
+   
+    
+}
+.foto-sobre:hover{
+    
+    border: 10px solid #650168;
+    border-radius: 50%;
+    -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+    -webkit-transform: rotateZ(-360deg) scale(1.5);
+    transform: rotateZ(-360deg) scale(1.5);
+}
+
+/*---------------------------------SOBRE------------------------------------*/
+
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.texto-sobre{
+    align-items: center;
+}
+
+.texto-sobre p{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 10%;
+    margin-bottom: 35px;
+
+    
+}
+.texto-sobre h3{
+    font-size: 30px;
+    color: rgba(34, 193, 195, 1) ;
+    text-align: center;
+    margin-bottom: 35px;
+    
+}
+.texto-sobre h1{
+    font-size: 3.0rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(255, 0, 238);
+    font-family: 'Poppins', sans-serif;
+    line-height: 5.4rem;
+    text-shadow:#000000 0.1em 0.1em 0.2em;
+
+}
+.habilidade{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.titulo-habilidades h3{
+    color: rgba(34, 193, 195, 1) ;
+    font-size: 30px;
+    text-align:center;
+    margin-right: 300px ;
+    margin-bottom: 35px;
+    
+    
+}
+.cards-habilidades{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    
+    margin-bottom: 35px;
+}
+.box{
+    border: 3px solid  rgb(0, 0, 0);
+    padding: 10px 5px;
+    align-items: center;
+    border-radius: 20px 0 ;
+    text-align: center;
+    margin: 10px;
+    box-shadow :#000000 0.1em 0.1em 0.5em ;
+
+    
+}
+.box img{
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(13, 1, 70));    /* propriedade para mudar a cor de um png*/
+}
+.content-main{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+
+}
+
+.language .circle{
+   display: inline-block;
+   background-color: #ffffff;
+   width: 12px;
+   height: 12px;
+   border: 1px solid #000000;
+   border-radius: 50%;
+   
+}
+.link-img img:hover{
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+    
+}
+
+.project{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid  rgb(0, 0, 0);
+    padding: 10px 5px;
+    border-radius: 20px 0 ;
+    margin: 20px;
+    box-shadow :#000000 0.1em 0.1em 0.5em ;
+    font-size: 20px;
+    align-items: center;
+
+}
+
+.project img{
+    height: 50px;
+    width: 50px;
+    
+}
+.project .link-img{
+    padding: 0 20px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .container {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        flex-wrap: wrap;
+        height: 100%;
+        align-items: center;
+        
+        
+    
+    
+    }
+   
+    .sobre{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    
+    .container-link .link{
+        display: none;
+    }
+    
+    .link-mobile i {
+        display: block;
+        
+    }
+    .titulo-habilidades h3{
+        color: rgba(34, 193, 195, 1) ;
+        font-size: 30px;
+        text-align: center;
+        margin-right: 0 ;
+    }
+    .cards-habilidades{
+        text-align: center;
+        flex-wrap: wrap;
+        margin-right: 0 ;
+    }
+
+}
+
+    
+
+
+
+
