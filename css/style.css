@@ -30,16 +30,25 @@ body {
 /*---------------------------------CABEÇALHO------------------------------------*/
 header {
     border-bottom: 1px solid white;
-
-
-
+    position: fixed;
+    width: 100%;
+    background-color: #20244f;
+    opacity: 0.4;
+    
 }
+ footer{
+    border-top: 1px solid white;
+    
+ }
+
 
 .container-cabecalho {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: #20244f;
+    
 
 }
 
@@ -74,6 +83,9 @@ header {
 
 .container.sobre {
     align-items: center;
+    
+    
+
 }
 
 .foto-sobre img {
@@ -107,7 +119,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 100px;
+    
 }
 
 .texto-sobre {
@@ -129,6 +142,7 @@ header {
     color: rgba(34, 193, 195, 1);
     text-align: center;
     margin-bottom: 35px;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
 
 }
 
@@ -157,7 +171,7 @@ header {
     text-align: center;
     margin-right: 300px;
     margin-bottom: 35px;
-
+    text-shadow: #000000 0.1em 0.1em 0.2em;
 
 }
 
@@ -166,18 +180,17 @@ header {
     align-items: center;
     justify-content: space-around;
     margin-top: 40px;
-
     margin-bottom: 35px;
 }
 
 .box {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid #20244f;
     padding: 10px 5px;
     align-items: center;
     border-radius: 20px 0;
     text-align: center;
     margin: 10px;
-    box-shadow: #000000 0.1em 0.1em 0.5em;
+    box-shadow: #20244f 0.1em 0.1em 0.5em;
 
 
 }
@@ -211,11 +224,11 @@ header {
     
     display: flex;
     justify-content:space-between;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid #20244f;
     padding: 10px 5px;
     border-radius: 20px 0;
     margin: 20px;
-    box-shadow: #000000 0.1em 0.1em 0.5em;
+    box-shadow: #20244f 0.1em 0.1em 0.5em;
     font-size: 20px;
     align-items: center;
 
@@ -245,6 +258,23 @@ header {
     
 
 }
+.container-footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+     
+}
+.container-footer img{
+filter: opacity(0.4) drop-shadow(0 0 0 rgb(13, 1, 70)); 
+width: 60px;
+height: 60px;
+
+}
+.container-footer a{
+    cursor: pointer;
+}
+
 
 
 
@@ -301,5 +331,10 @@ header {
         padding: 0;
        display: flex;
        gap: 10px;
+    }
+    .container-footer{
+       display: flex;
+       flex-wrap: wrap;
+      
     }
 }
