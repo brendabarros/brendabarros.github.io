@@ -37,3 +37,17 @@ function getApiGitHub() {
 
 }
 getApiGitHub()
+
+function clickMenu() {
+   if (itens.style.display == 'block'){
+       itens.style.display = 'none'
+       logo.style.display = 'block'
+       logo.style.opacity = '1'
+   }else{
+      itens.style.display = 'block'
+      logo.style.opacity = '0'
+      
+      
+   }
+}
+

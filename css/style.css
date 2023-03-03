@@ -8,13 +8,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-
 }
 
 body {
     background: rgb(34, 193, 195);
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(112, 33, 154, 1) 100%);
-
 }
 
 .container {
@@ -23,8 +21,6 @@ body {
     margin-left: auto;
     width: 80%;
     padding: 24px;
-
-
 }
 
 /*---------------------------------CABEÇALHO------------------------------------*/
@@ -34,13 +30,12 @@ header {
     width: 100%;
     background-color: #20244f;
     opacity: 0.4;
-    
-}
- footer{
-    border-top: 1px solid white;
-    
- }
 
+}
+
+footer {
+    border-top: 1px solid white;
+}
 
 .container-cabecalho {
     display: flex;
@@ -48,15 +43,11 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #20244f;
-    
-
 }
 
 .container-cabecalho .logo h2 {
     color: white;
     font-size: 30px;
-
-
 }
 
 .container-link .link {
@@ -77,15 +68,10 @@ header {
     font-size: 30px;
 }
 
-
-
 /*---------------------------------IMAGEM------------------------------------*/
 
 .container.sobre {
     align-items: center;
-    
-    
-
 }
 
 .foto-sobre img {
@@ -93,14 +79,11 @@ header {
     width: 100%;
     height: 100%;
     align-items: center;
-
 }
 
 .foto-sobre {
     transition: all .5s;
     padding: 10px 10px;
-
-
 }
 
 .foto-sobre:hover {
@@ -120,7 +103,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 100px;
-    
+
 }
 
 .texto-sobre {
@@ -169,7 +152,7 @@ header {
     color: rgba(34, 193, 195, 1);
     font-size: 30px;
     text-align: center;
-    margin-right: 300px;
+    margin-right: 250px;
     margin-bottom: 35px;
     text-shadow: #000000 0.1em 0.1em 0.2em;
 
@@ -191,8 +174,6 @@ header {
     text-align: center;
     margin: 10px;
     box-shadow: #20244f 0.1em 0.1em 0.5em;
-
-
 }
 
 .box img {
@@ -205,8 +186,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 5px;
-
-
 }
 
 .language .circle {
@@ -221,9 +200,9 @@ header {
 
 
 .project {
-    
+
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     border: 3px solid #20244f;
     padding: 10px 5px;
     border-radius: 20px 0;
@@ -235,17 +214,12 @@ header {
 }
 
 .project div {
-
     align-items: center;
-    
-    
-
 }
 
 .project img {
     height: 50px;
     width: 50px;
-
 }
 
 .project .link-img {
@@ -254,57 +228,66 @@ header {
     flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
-
-    
-
 }
+
 .container-footer {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  text-align: center;
-     
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
 }
-.container-footer img{
-filter: opacity(0.4) drop-shadow(0 0 0 rgb(13, 1, 70)); 
-width: 60px;
-height: 60px;
+
+.container-footer img {
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(13, 1, 70));
+    width: 60px;
+    height: 60px;
 
 }
-.container-footer a{
+
+.container-footer a {
     cursor: pointer;
 }
 
-
-
+.container-footer p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
 
 
 @media screen and (max-width: 768px) {
+
     .container {
         color: rgb(0, 0, 0);
         font-size: 30px;
         flex-wrap: wrap;
         height: 100%;
         align-items: center;
-
-
-
-
     }
 
     .sobre {
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
+    
 
     .container-link .link {
         display: none;
+
+    }
+
+    .container .container-cabecalho {
+        text-align: right;
+        
     }
 
     .link-mobile i {
+
         display: block;
+        cursor: pointer;
 
     }
+    
 
     .titulo-habilidades h3 {
         color: rgba(34, 193, 195, 1);
@@ -327,14 +310,16 @@ height: 60px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .link-img{
+
+    .link-img {
         padding: 0;
-       display: flex;
-       gap: 10px;
+        display: flex;
+        gap: 10px;
     }
-    .container-footer{
-       display: flex;
-       flex-wrap: wrap;
-      
+
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+
     }
 }
